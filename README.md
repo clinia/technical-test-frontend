@@ -30,12 +30,11 @@ The form containing `*` in its services is used if no other form description con
 
 #### Bonus
 
-Instead of using the local `json` files, fetch the data from:
+1. Instead of using the local `json` files, fetch the data using Next.js api routes.
 
-- Services: https://raw.githubusercontent.com/clinia/technical-test-frontend/main/data/services.json
-- Form: https://raw.githubusercontent.com/clinia/technical-test-frontend/main/data/form.json
+2. Implement CRUD endpoints for the Services. JSON files can be used to seed data in memory at server startup, and user should be able to dynamically add and remove services.
 
-Add field validation to prevent the user from submitting invalid information:
+3. Add field validation to prevent the user from submitting invalid information:
 
 - Email: must be a valid email
 - Phone: must only contain numbers
@@ -126,19 +125,3 @@ console.log(typeof bar());
 5. `Error`
 
 ---
-
-### React & Redux Questions
-
-#### Q1: What is the difference between state and props?
-
-#### Q2: What is the point of using `keys` in React?
-
-#### Q3: What's the difference between a controlled component and an uncontrolled one in React?
-
-#### Q4: What would be a good lifecycle method/hook to fetch data from an API for a component?
-
-#### Q5: How is `state` updated in an application using Redux?
-
-#### Q6: How can we handle async logic in Redux (for example making a call to fetch data)?
-
-#### Q7: What are reducers in Redux?
