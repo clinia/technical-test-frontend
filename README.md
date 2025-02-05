@@ -79,7 +79,7 @@ Syntax: ES6
 
 #### Q3: What is the result?
 
-`new array(5).toString()`
+`new Array(5).toString()`
 
 1. `",,,,"`
 2. `[]`
