@@ -34,11 +34,13 @@ The form containing `*` in its services is used if no other form description con
 
 2. Implement CRUD endpoints for the Services. JSON files can be used to seed data in memory at server startup, and user should be able to dynamically add and remove services.
 
-3. Add field validation to prevent the user from submitting invalid information:
+3. Add routing to different routes that displays the form with the selected service. For example, `/bone-scan` will show your form with "Bone scan" selected as the requested service.
 
-- Email: must be a valid email
-- Phone: must only contain numbers
-- Text: must not be an empty string `""`
+4. Make sure that form values are not lost on page refresh or navigation. This should help the user perserve their progress in filling the form.
+
+5. Implement endpoint that will handle the form submission. This can save the form value into a server-side memory and can show the user the requests that they've previously submitted.
+
+6. Impress us! If there is anything you'd like to add to showcase your skills, go for it!
 
 ## Getting Started
 
@@ -54,74 +56,3 @@ The app will run on http://localhost:3000 and any changes in your code will be r
 Styles: in styles.scss
 Entry point: pages/index.js
 Syntax: ES6
-
----
-
-## Part 2 - Questions
-
-#### Q1: What is the result?
-
-`true + false > 2 + true`
-
-1. `true`
-2. `false`
-3. `TypeError`
-4. `NaN`
-
-#### Q2: What is the result?
-
-`"1" - -"1"`
-
-1. `0`
-2. `2`
-3. `11`
-4. `"11"`
-
-#### Q3: What is the result?
-
-`new Array(5).toString()`
-
-1. `",,,,"`
-2. `[]`
-3. `"[]"`
-
-#### Q4: What is printed in the console?
-
-```
-  var arr = ["foo", "bar"]
-  arr.length = 0;
-  arr.push("bin")
-  console.log(arr)
-```
-
-1. `['foo', 'bar']`
-2. `['foo', 'bar', 'bin']`
-3. `['bin', 'foo', 'bar']`
-4. `['bin']`
-
-#### Q5: What is the result?
-
-`10 > 9 > 8 === true`
-
-1. `true`
-2. `false`
-
-#### Q6: What is logged to the console?
-
-```
-function bar() {
- return foo;
- foo = 10;
- function foo() {}
- var foo = ‘11’;
-}
-console.log(typeof bar());
-```
-
-1. `number`
-2. `function`
-3. `undefined`
-4. `string`
-5. `Error`
-
----
