@@ -56,3 +56,7 @@ The app will run on http://localhost:3000 and any changes in your code will be r
 Styles: in styles.scss
 Entry point: pages/index.js
 Syntax: ES6
+
+### Testing
+
+This technical test uses Jest for unit testing. Simply run `npm run jest` to run the test files.
