@@ -56,3 +56,7 @@ The app will run on http://localhost:3000 and any changes in your code will be r
 Styles: in styles.scss
 Entry point: pages/index.js
 Syntax: ES6
+
+### Testing
+
+This project uses `vitest` for unit tests. To run the vitest watcher, run `npm run test`.
