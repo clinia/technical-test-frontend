@@ -1,13 +1,17 @@
 # Technical Test
 
-For this test, you are given the task of developing a feature for one of our products.
+This test's objective is to develop a small application where a user is able to fill an appointment form based on the desired service. As a rule fo thumb, you should focus on:
+1. **Basic functionality and fulfilling the base requirements first**. Focusing on bonuses and styling should come after you have an operational base application.
+2. **Structuring your code the same way you would an a more complex application**. This is a straight forward situation, but we will evaluate how you structure you code and components for reuseability and extensibility. 
+3. **Leaving comments and TODOs where you make assumptions or are take shortcuts**. It is okay due to the nature of the test to not always go all in on every aspect of the code, but it is important for you to communicate that you know what could be done better or differently in a real-life situation.
 
 ## Task: Appointment Form
 
-Below is an example of the appointment form, it does not have to look like this:
 ![](https://user-images.githubusercontent.com/31007761/114183240-761c6c00-9911-11eb-8b9a-fc7b3b8ca04b.png)
 
-#### Feature requirements:
+> _**Above is an example of the appointment form, it does not have to look like this**_
+
+### Base Feature requirements:
 
 - Allow the user to select a service.
 - The user must select one service before the rest of the form is shown.
@@ -20,15 +24,12 @@ Here is the _tricky part_. Depending on the service selected, different input an
 #### Data Fetching
 
 Services: `data/services.json`
-Form: `data/form.json`
+contains all the services a user can select.
 
-`Services`: contains all the services a user can select.
+Form: `data/form.json` 
+describes the form constructions that are possible. When a user selects a `service`, you will need to look for the right form description containing the `service` in it's property `services` and show the right title and inputs (with the right type and label) for the user to fill out. The form containing `*` in its services is used if no other form description contains the service the user selected.
 
-`Form`: describes the form constructions that are possible. When a user selects a `service`, you will need to look for the right form description containing the `service` in it's property `services` and show the right title and inputs (with the right type and label) for the user to fill out.
-
-The form containing `*` in its services is used if no other form description contains the service the user selected.
-
-#### Bonus
+### Bonuses
 
 1. Instead of using the local `json` files, fetch the data using Next.js api routes.
 
