@@ -3,11 +3,12 @@ import services from '../data/services.json' with { type: "json" };
 import forms from '../data/form.json' with { type: "json" };
 
 const seedDatabase = async () => {
+    // TODO: Replace with your PostgreSQL connection details
     const client = new Client({
-        user: 'postgres',
-        host: 'localhost',
-        database: 'postgres',
-        password: 'postgres',
+        user: '',
+        host: '',
+        database: '',
+        password: '',
         port: 5432, // Default PostgreSQL port
     });
 

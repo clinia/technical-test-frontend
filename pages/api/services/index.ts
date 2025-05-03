@@ -8,6 +8,6 @@ export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<ResponseData>
 ) {
-    // TODO: Implement the API endpoint for forms
+    // TODO: Implement the API endpoint for services
     res.status(501).json({ message: 'Not Implemented' })
 }
